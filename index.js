@@ -3,13 +3,9 @@ function getCompChoice() {
     let compChoice = hand[Math.floor(Math.random() * hand.length)];
     return compChoice;
 }
-
 const compHand = getCompChoice()
 const playerChoice = "scissors"
 const playerHand = (playerChoice.toLowerCase())
-
-console.log(playerHand)
-console.log(compHand)
 
 function playRound () {
     if (playerHand === "rock") {
@@ -19,9 +15,11 @@ function playRound () {
     } else if (playerHand === "scissors") {
         playRoundScissors();
     }
+    return;
 }
 
 function playRoundRock() {
+    const compHand = getCompChoice()
     if (compHand === "rock") {
         console.log("DRAW!!");
     } else if (compHand === "paper") {
@@ -32,6 +30,7 @@ function playRoundRock() {
 }
 
 function playRoundPaper() {
+    const compHand = getCompChoice()
     if (compHand === "paper") {
         console.log("DRAW!!");
     } else if (compHand === "scissors") {
@@ -42,6 +41,7 @@ function playRoundPaper() {
 }
 
 function playRoundScissors() {
+    const compHand = getCompChoice()
     if (compHand === "scissors") {
         console.log("DRAW!!");
     } else if (compHand === "rock") {
@@ -51,7 +51,8 @@ function playRoundScissors() {
     }
 }
 
-
-
-// p > r > s 
-
+function game(){
+    for (let i = 0; i === 5; i++) {
+        playRound()
+    }
+}
