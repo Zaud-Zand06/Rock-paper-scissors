@@ -4,7 +4,7 @@ function getCompChoice() {
     return compChoice;
 }
 const compHand = getCompChoice()
-const playerChoice = "scissors"
+const playerChoice = prompt("Rock, Paper, Scissors", "Rock") 
 const playerHand = (playerChoice.toLowerCase())
 
 function playRound () {
@@ -51,8 +51,8 @@ function playRoundScissors() {
     }
 }
 
-function game(){
-    for (let i = 0; i === 5; i++) {
-        playRound()
+function game() {
+    for (let i = 0; i < 5; i++) {
+        playRound();
     }
 }
