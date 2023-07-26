@@ -1,11 +1,5 @@
-function getCompChoice() {
-    let hand = ["rock", "paper", "scissors"];
-    let compChoice = hand[Math.floor(Math.random() * hand.length)];
-    return compChoice;
-}
-const compHand = getCompChoice()
-const playerChoice = prompt("Rock, Paper, Scissors", "Rock") 
-const playerHand = (playerChoice.toLowerCase())
+// const playerChoice = prompt("Rock, Paper, Scissors", "Rock") 
+// const playerHand = (playerChoice.toLowerCase())
 
 function playRound () {
     if (playerHand === "rock") {
@@ -18,36 +12,51 @@ function playRound () {
     return;
 }
 
+function getCompChoice() {
+    let hand = ["rock", "paper", "scissors"];
+    let compChoice = hand[Math.floor(Math.random() * hand.length)];
+    return compChoice;
+}
+
+const compHand = getCompChoice();
+const rockButton = document.getElementById('rock');
+const paperButton = document.getElementById('paper');
+const scissorsButton = document.getElementById('scissors');
+
+rockButton.onclick = () => playRoundRock();
+paperButton.onclick = () => playRoundPaper();
+scissorsButton.onclick = () => playRoundScissors();
+
 function playRoundRock() {
     const compHand = getCompChoice()
     if (compHand === "rock") {
-        console.log("DRAW!!");
+        alert("DRAW!!");
     } else if (compHand === "paper") {
-        console.log("You Lose!!");
+        alert("You Lose!!");
     } else {
-        console.log("You Win!!");
+        alert("You Win!!");
     }
 }
 
 function playRoundPaper() {
     const compHand = getCompChoice()
     if (compHand === "paper") {
-        console.log("DRAW!!");
+        alert("DRAW!!");
     } else if (compHand === "scissors") {
-        console.log("You Lose!!");
+        alert("You Lose!!");
     } else {
-        console.log("You Win!!");
+        alert("You Win!!");
     }
 }
 
 function playRoundScissors() {
     const compHand = getCompChoice()
     if (compHand === "scissors") {
-        console.log("DRAW!!");
+        alert("DRAW!!");
     } else if (compHand === "rock") {
-        console.log("You Lose!!");
+        alert("You Lose!!");
     } else {
-        console.log("You Win!!");
+        alert("You Win!!");
     }
 }
 

@@ -1,0 +1,26 @@
+body {
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+h1 {
+    margin: 5rem;
+}
+
+ul {
+    padding-left: 0px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+ul>button {
+    margin: 1rem;
+}
+
+button {
+    border-radius: 5px;
+    background-color: blueviolet;
+}
