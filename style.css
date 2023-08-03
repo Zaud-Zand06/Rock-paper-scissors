@@ -4,6 +4,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-flow: column;
+    height: 100vh;
 }
 
 h1 {
@@ -24,3 +25,38 @@ button {
     border-radius: 5px;
     background-color: blueviolet;
 }
+
+#score {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
+    color: lightcoral;
+    font-weight: bolder;
+}
+
+#compPick {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
+    color: lightcoral;
+    font-weight: bolder;
+}
+
+#gameScore {
+    display: flex;
+    flex-flow: column nowrap;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: bisque;
+}
+
